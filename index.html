@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Weather Report</title>
+</head>
+<body>
+    <h1>Daily weather report</h1>
+    <p>Quick access:<br>
+        <ul>
+            <li><a href="/weather?city=Calgary">Calgary</a></li>
+            <li><a href="/weather?city=Vancouver">Vancouver</a></li>
+            <li><a href="/weather?city=Toronto">Toronto</a></li>
+            <li><a href="/weather?city=Ottawa">Ottawa</a></li>
+        </ul>
+    </p>
+    <p>OR</p>
+    <p>
+        <form action="/weather" method="POST">
+            <input type="text" name="city" placeholder="Search cities">
+            <input type="Submit" value="Search">
+        </form>
+    </p>
+</body>
+</html>
